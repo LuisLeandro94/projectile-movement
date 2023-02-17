@@ -98,7 +98,7 @@ const Ball = ({ ball }) => {
 		setInterval(moveBall, ball.time);
 	}, []);
 
-	return <span style={ballStyles}></span>;
+	return <span aria-label='span' style={ballStyles}></span>;
 };
 
 export default Ball;

@@ -50,7 +50,7 @@ function App() {
 	};
 
 	return (
-		<div className='App' onClick={createBall}>
+		<div aria-label='container' className='App' onClick={createBall}>
 			<Balls balls={balls} />
 		</div>
 	);
