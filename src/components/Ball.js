@@ -24,7 +24,7 @@ const Ball = ({ ball }) => {
 		const checkLimits = (limit) => {
 			switch (limit) {
 				case 'right':
-					return ball.posX >= ball.maxX - (ball.size + 10);
+					return ball.posX >= ball.maxX - ball.size;
 				case 'left':
 					return ball.posX <= 0;
 				case 'top':
@@ -76,7 +76,7 @@ const Ball = ({ ball }) => {
 
 			// Adjust position of ball inside window width
 			if (checkLimits('right')) ball.posX = ball.maxX - ball.size;
-			if (checkLimits('left')) ball.posX = -5;
+			if (checkLimits('left')) ball.posX = 0;
 
 			// Updates position of the ball in the X axis
 			updateBallInfo('x');
