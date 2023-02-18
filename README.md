@@ -17,7 +17,7 @@ The velocity on the X axis is constant, except for when it hits a wall, in which
 
 ## Compile
 
-`npm run dev`
+`npm start`
 
 ## Test
 
